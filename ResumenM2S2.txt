@@ -1,0 +1,108 @@
+Practica primero
+	intenta resolver sin IA antes de pedir ayuda
+Divide y aprende
+	usa IA para partes especificas, no soluciones completas
+Revisa siempre
+	analiza el codigo generado, busca explicaciones
+Establece limites
+	decide cuando usar IA (debugging, aprendizaje)
+Entender
+	¿comprendo la solucion
+Explicar
+	¿puedo explicar a otros?
+Revisar
+	¿He revisado la solucion?
+Intentar
+	¿Lo intente yo primero?
+	
+_______________________________________________________________________________
+
+Ing. requisitos
+_______________________________________________________________________________
+
+Intro a CSS
+
+Sintaxis de CSS
+Cada regla CSS esta formada por un SELECTOR (que es el elemento de HTML al que se le aplicara el estilo) y una DECLARACION (propiedad a la que queremos cambiar su valor).
+-selector{
+    property: value;
+}
+-p{
+    color: black;
+    font-size: 16px;
+}
+
+este formato (basico) es la base en la cual trabajaremos para aplicar estilos a cualquier elemento de nuestra pagina.
+Ahora que entendemos como funciona la sintaxis, aprendamos a seleccionar los elementos de manera efectiva mediante los SELECTORES.
+
+SELECTORES: Permiten que CSS aplique estilos a elementos especificos
+
+Bordes y sombras
+
+BORDES: delimitan visualmente los elementos de una pagina
+SOMBRAS: añaden profundidad, ayudando a crear efectos tridimensionales
+
+div{
+    border: 2px solid #000;
+    box-shadow: 4px 4px 10px rgba(0,0,0, 0.1);  
+}
+
+Propiedades de Texto y Fuentes
+
+p{
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #444;
+}
+
+BOX MODEL
+Es la base de como CSS organiza y distribuye el espacio alrededor de los elementos. En CSS se trata de una caja que contiene, PADDING(relleno, espacio dentro del borde, alrededor del contenido), BORDER(borde) y MARGIN (margen, espacio fuera del borde).
+
+DISPLAY Y POSITION
+
+La propiedad display nos permite controlar como se comportan los elementos en el flujo de documento. Los elementos pueden ser:
+
+BLOCK:Ocupan todo el ancho disponible.
+INLINE:Ocupan solo el espacio necesario.
+INLINE-BLOCK:Se comportan como elementos en linea(Ocupan el espacio necesario), pero respetan el tamaño de bloque.
+
+Position: Define como se colocaran los elementos en relación con otros elementos o la ventana del navegador.
+Relative: Posicionado en relacion con su posicion normal.
+Absolute: Posicionado en relacion con su contenedor más cercano con posicion relativa.
+Fixed: Posicionado en relacion con la ventana del navegador.
+
+.absolute-box{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+.fixed-box{
+    position: fixed;
+    bottom: 0;
+}
+
+TRANSFORMACIONES
+
+Nos permiten modificar la apariencia elementos mediante rotaciones, escalas y traslaciones.
+
+.box{
+	transform: rotate(45deg);
+}
+
+Ademas, las pseudoclases(:hover, :focus, etc.) nos permite cambiar los estilos de un elemento en funcion de ciertos eventos, y los pseudoelementos (::before, ::after) ayudan a manipular partes especificas de un elemento.
+
+
+
+a::hover {
+	color: red;
+}
+
+
+p::first-letter{
+	font-size: 2em;
+	color: blue;
+}
+
+
